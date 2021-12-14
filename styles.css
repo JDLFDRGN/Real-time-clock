@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: url('stars.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+.container{
+    box-sizing: content-box;
+    width: 35em;
+    height: 35em;
+    display: inherit;
+    place-items: inherit;
+}
+.clock{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+.clock::before{
+    position: absolute;
+    content: '';
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.clock::after{
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.arms{
+    display: grid;
+    place-items: center;
+    height: inherit;
+    width: inherit;
+    position: relative;
+}
+.arm{
+    transform-origin: bottom;
+}
+.second{
+    position: absolute;
+    height: 45%;
+    width: 0.6%;
+    background-color: red;
+    bottom: 50%;
+}
+.minute{
+    position: absolute;
+    height: 40%;
+    width: 1.5%;
+    background-color: black;
+    bottom: 50%;
+}
+.hour{
+    position: absolute;
+    height: 30%;
+    width: 4%;
+    background-color: black;
+    bottom: 50%;
+}
+.numbers{
+    inset: 0;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+.number{
+    padding-top: 3%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+h2{
+    font-size: 2em;
+}
+@media (max-width: 600px){
+    .container{
+        width: 30em;
+        height: 30em;
+    }
+}
+@media (max-width: 500px){
+    .container{
+        width: 25em;
+        height: 25em;
+    }
+}
+@media (max-width: 450px){
+    .container{
+        width: 22em;
+        height: 22em;
+    }
+}
+@media (max-width: 400px){
+    .container{
+        width: 18em;
+        height: 18em;
+    }
+}
+@media (max-width: 300px){
+    .container{
+        width: 15em;
+        height: 15em;
+    }
+}
+@media (orientation: landscape) and (max-height: 720px){
+    .container{
+        width: 26em;
+        height: 26em;
+    }
+}
+@media (orientation: landscape) and (max-height: 450px){
+    .container{
+        width: 22em;
+        height: 22em;
+    }
+}
+@media (orientation: landscape) and (max-height: 375px){
+    .container{
+        width: 19em;
+        height: 19em;
+    }
+}
+@media (orientation: landscape) and (max-height: 280px){
+    .container{
+        width: 15em;
+        height: 15em;
+    }
+}
