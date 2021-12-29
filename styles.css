@@ -132,8 +132,8 @@ h2{
 }
 @media (orientation: landscape) and (max-height: 720px){
     .container{
-        width: 26em;
-        height: 26em;
+        width: 30em;
+        height: 30em;
     }
 }
 @media (orientation: landscape) and (max-height: 450px){
